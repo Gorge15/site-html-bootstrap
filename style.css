@@ -22,6 +22,7 @@ culori
 
 }
 
+
 .btn-primary:hover,.btn-primary:focus,.btn-primary:active, 
 .btn-primary:active:focus:not(:disabled):not(.disabled),
 .btn:focus, .btn:active, .btn:hover, button, button:hover, button:focus, button:active{
@@ -98,3 +99,26 @@ culori
     text-align: center;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #EFEBDF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fade89;
+    border-radius: 69px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffc71e;
+}
+
+.span-nav {
+    opacity: 75%;
+    text-align: left;
+    margin-top: 25px;
+}
