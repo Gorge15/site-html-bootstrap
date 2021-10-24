@@ -160,9 +160,28 @@ culori
     opacity: 90%;
 }
 
+.icon-menu a{
+    color: black;
+    opacity: 70%;
+    text-decoration: none;
+}
+
+.icon-menu a:hover{
+    color: black;
+    opacity: 90%;
+}
+
+
 .icon-menu i {
     font-size: 64px;
+    opacity: 80%;
+    align-items: center;
+    text-align: center;
 }
+
+
+
+
 
 .new-item {
     color: white;
