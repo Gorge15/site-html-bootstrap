@@ -126,3 +126,61 @@ culori
 .dropdown-menu {
     border-color: transparent;
 }
+
+.nav-btn-menu {
+    color: black;
+    opacity: 70%;
+}
+
+.nav-btn-menu:hover {
+    opacity: 90%;
+}
+
+.nav-btn-menu-fixed {
+    color: black;
+}
+
+.icon-nav {
+    color: black;
+    font-size: 24px;
+    opacity: 80%;
+}
+
+.icon-nav:hover {
+    color: black;
+    opacity: 100%;
+}
+
+.nav-items-hover {
+    color: black;
+    opacity: 70%;
+}
+
+.nav-items-hover:hover {
+    opacity: 90%;
+}
+
+.icon-menu i {
+    font-size: 64px;
+}
+
+.new-item {
+    color: white;
+    font-size: 10px;
+    background-color: #BCAC76;
+    margin-left: 3px;
+    border: 1px solid #BCAC76;
+    border-radius: 20%;
+}
+
+.shop-title {
+    color: black;
+    font-weight: 450;
+    
+}
+
+
+.shop-img {
+    width: 100%;
+    height: 100%;
+}

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./icons/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -23,9 +24,10 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col col-3 d-none d-lg-block text-center mt-2 phone-animation"><i class="fas fa-phone"></i> -
+                <div class="col col-3 d-none d-lg-block text-center mt-2 phone-animation">
+                    <i class="fas fa-phone"></i> -
                     0770889445</div>
-                <div class="col col-7 text-center mt-2">Free in-store delivery</div>
+                <div class="col col-7 text-center mt-2" ><span>Free in-store delivery</span></div>
                 <div class="col col-1 d-none d-md-block text-center mt-2" style="display: inline;">
                     <div class="dropdown">
                         <button class="btn top-btn dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -60,15 +62,77 @@
         <!-- Nav atunci cand marimea screen-ului este mai mare de md -->
         <nav class="navbar bg fixed d-none d-lg-block">
             <div class="container-fluid">
-                <div class="d-flex flex-row gap-3 col col-6">
+                <div class="d-flex flex-row col col-6">
 
                     <a class="navbar-brand" style="color: black" href="/">Varkala</a>
 
 
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <button class="btn  dropdown-toggle nav-btn-menu-fixed" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
+                            Home
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#" style="color: #BCAC76">Home 1 - Fashion</a></li>
+                            <li><a class="dropdown-item " href="#"><span class="nav-items-hover">Home 2 - Fashion</span></a></li>
+                            <li><a class="dropdown-item nav-items-hover" href="#"><span class="nav-items-hover">Home 2 - Fashion</span><span class="new-item">NEW</span></a></li>
+                            <li><a class="dropdown-item nav-items-hover" href="#"><span class="nav-items-hover">Home 2 - Fashion</span><span class="new-item">NEW</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle nav-btn-menu" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <div class="container">
+                                <row class="d-flex" style="min-width: 850px;"">
+                                    <div class="col col-4">
+                                        <span class="shop-title text-carousel">Shop Pages</span>
+                                        <hr style="width: 50%;">
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Full width</a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Full width with category menu</a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Full width with big products</a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Fixed width</a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Fixed width & sidebar</a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Fixed width & masorny layout <span class="new-item">NEW</span></a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Subcategories</a></li>
+                                    </div>
+                                    <div class="col col-4 ">
+                                        <span class="shop-title text-carousel">Product Pages</span>
+                                        <hr style="width: 50%;">
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Product with stick info</a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Product with background</a></li>
+                                        <li><a href="#" class="dropdown-item nav-items-hover">Product standard</a></li>
+                                    </div>
+                                    <div class="col col-4b text-end">
+                                        <!-- aici vine poza -->
+                                        <img src="https://varkala-react-version.vercel.app/img/product/kyle-loftus-596319-unsplash-cropped.jpg" class="shop-img">
+                                    </div>
+                                </row>
+                            </div>    
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle nav-btn-menu" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Icons
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <div class="container">
+                                <row class="d-flex" style="min-width: 750px;">
+                                    <div class="col col-1 icon-menu">
+                                        <i class="fas fa-tshirt"></i>
+                                        <span>T-Shirt</span>
+                                    </div>
+                                </row>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle nav-btn-menu" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -77,20 +141,9 @@
                         </ul>
                     </div>
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <button class="btn  dropdown-toggle nav-btn-menu" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown button
+                            Docs
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -100,10 +153,20 @@
                     </div>
                 </div>
                 <div class="d-flex flex-row-reverse gap-3 col col-6 text-end">
+                    
                     <button class="navbar-toggler text-end" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <i class="fa fa-bars" style="opacity: 80%;"></i>
                     </button>
+                    <a href="cart.html" class="icon-nav">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <a href="wishlist.html" class="icon-nav">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                    <a href="#" class="icon-nav">
+                        <i class="fas fa-user"></i>
+                    </a>
                 </div>
             </div>
 
@@ -215,7 +278,7 @@
                     <h5 style="font-size: 72px;" class="text-carousel">Blouses & tops</h5>
                     <p style="opacity: 50%;">The bedding was hardly able to cover it and seemed ready to slide off any
                         moment. His many legs, pit</p>
-                    <button class="btn-carousel">Discovery More</button>
+                    <button class="btn-carousel">Discover More</button>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
@@ -251,7 +314,7 @@
 
 
 
-
+<script src="./script.js"></script>
 </body>
 
 </html>
