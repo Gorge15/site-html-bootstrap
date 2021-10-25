@@ -3,6 +3,11 @@ culori
     - bg: #EFEBDF
 */
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .bg {
     background-color: #EFEBDF;
     text-decoration: none;
@@ -202,4 +207,143 @@ culori
 .shop-img {
     width: 100%;
     height: 100%;
+}
+
+.pages-title-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.docs-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 14px;
+}
+
+.docs-item {
+    opacity: 70%;
+}
+
+.docs-item:hover {
+    opacity: 90%;
+}
+
+.pages-subtitle {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.pages-subtitle:hover {
+    color: black;
+    opacity: 80%;
+}
+
+.pages-list {
+    font-size: 12px;
+    color: black;
+    opacity: 50%;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.pages-list:hover {
+    color: black;
+    opacity: 80%;
+}
+
+.search-input {
+    border: 0.5px solid black;
+    border-style: hidden hidden solid hidden;
+    margin-right: 30px;
+}
+
+.search-input input {
+    outline: none !important;
+    background-color: transparent;
+    text-align: center;
+    border-style: hidden hidden hidden hidden;
+}
+
+.search-input input:focus{
+    outline: none !important;
+
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+
+.images a:hover {
+	opacity: 0.7;
+}
+
+.images a{
+	transition: .5s ease;
+}
+
+.right-item-display {
+    color: #BCAC76;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.right-item-display:hover {
+    color: #BCAC76;
+    text-decoration: underline;
+}
+
+.left-item-display {
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+    opacity: 80%;
+}
+
+.left-item-display:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+.card {
+    width: 150px;
+    height: 200;
+}
+
+
+
+.add-to-card {
+    color: white;
+    text-align: center;
+    background-color: #BCAC76;
+    position: relative;
+    top: 50%;
+    width: 100%;
+    opacity: 0%;
+    border: 0px solid transparent;
+
+}
+
+#stars{
+    opacity: 0%;
+    transition: 100ms;
+    text-align: center;
+}
+
+
+.card:hover #stars {
+    opacity: 100%;
+}
+
+.card:hover .add-to-card {
+    opacity: 100%;
 }
