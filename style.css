@@ -347,3 +347,47 @@ input[type="search"]::-webkit-search-results-decoration {
 .card:hover .add-to-card {
     opacity: 100%;
 }
+
+.input-element {
+    margin-top: 25px;
+}
+
+.input-element input {
+    outline: none !important;
+    border: 1px solid black;
+    margin-top: 10px;
+    border-style: none none solid none;
+    width: 95%;;
+    border-color: rgba(0, 0, 0, .25);
+    font-size: 17px;
+}
+
+.checkbox-element {
+    font-size: 18px;
+}
+
+.checkbox-element input {
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+
+.radio-element input{
+    position: relative;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.price-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.price-item .price {
+    justify-content: end;
+}
